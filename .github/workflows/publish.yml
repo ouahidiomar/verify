@@ -15,8 +15,7 @@ jobs:
 
 
       - name: Install dependencies and build
-        run: npm install
-        run: npm run ci
+        run: npm install && npm run ci
       - name: Publish package on NPM
         run: npm publish --access public
         env:
